@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TeamBeam India &mdash; Corporate Team Experiences, Offsites &amp; Development</title>
+<meta name="description" content="TeamBeam designs, delivers, and measures corporate team experiences, offsites, retreats and development across India and worldwide. Designed. Delivered. Measured.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D2137;--blue:#1565C0;--amber:#E8940F;--ink:#0D2137;--mid:#3c4a5c;--muted:#6b7888;--faint:#9aa6b4;
+--line:#e6eaf0;--line2:#d3dae3;--bg:#fff;--bg2:#f6f8fb;--bg3:#eef2f7;--navyl:#eaf0f7;--bluel:#e8f1fc;--amberl:#fdf3e3;
+--serif:'Syne',sans-serif;--sans:'DM Sans',sans-serif;--mono:'DM Mono',monospace;--wrap:1140px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--mid);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.15;letter-spacing:-.015em;font-weight:700}
+h1{font-size:clamp(32px,5vw,52px);font-weight:800}
+h2{font-size:clamp(24px,3.4vw,34px)}
+h3{font-size:20px}
+h4{font-size:16px}
+p{margin-bottom:14px}
+a{color:var(--blue);text-decoration:none}
+em{font-style:normal;color:var(--amber)}
+.kicker{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:14px}
+.kicker.b{color:var(--blue)}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--mid);line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:15px;padding:13px 26px;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:.16s;text-decoration:none}
+.btn-p{background:var(--amber);color:var(--navy)}.btn-p:hover{background:#cf820b}
+.btn-o{background:transparent;color:var(--ink);border-color:var(--line2)}.btn-o:hover{border-color:var(--navy);background:var(--bg2)}
+.btn-w{background:#fff;color:var(--navy)}.btn-w:hover{background:#eef2f7}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--mono);font-weight:500;font-size:19px;letter-spacing:.04em;color:var(--navy);text-decoration:none}
+.logo em{color:var(--amber)}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{color:var(--mid);font-size:14.5px;font-weight:500;text-decoration:none;transition:.15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-links .us{font-family:var(--mono);font-size:12px;color:var(--faint);border:1px solid var(--line2);padding:4px 9px;border-radius:6px}
+.nav-links .us:hover{color:var(--navy);border-color:var(--navy)}
+.burger{display:none;background:none;border:0;cursor:pointer;font-size:24px;color:var(--navy)}
+@media(max-width:920px){
+ .nav-links{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 28px 18px;display:none;box-shadow:0 12px 24px rgba(13,33,55,.07)}
+ .nav-links.open{display:flex}
+ .nav-links a{width:100%;padding:11px 0;border-bottom:1px solid var(--line)}
+ .nav-links .btn{margin-top:12px}
+ .burger{display:block}
+}
+/* breadcrumb */
+.crumb{background:var(--bg2);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+.crumb .wrap{padding-top:10px;padding-bottom:10px;color:var(--muted)}
+.crumb a{color:var(--muted)}.crumb a:hover{color:var(--navy)}
+.crumb b{color:var(--navy);font-weight:500}
+/* sections */
+section{padding:clamp(48px,7vw,84px) 0}
+.sec-tight{padding:clamp(36px,5vw,60px) 0}
+.dark{background:var(--navy);color:#cdd9e6}
+.dark h1,.dark h2,.dark h3,.dark h4{color:#fff}
+.dark .lead{color:#b9c7d6}
+.tint{background:var(--bg2)}
+.hero{padding-top:clamp(56px,8vw,96px)}
+.hero .kicker{color:var(--amber)}
+.eyebrow-band{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--muted)}
+.eyebrow-band .dot{color:var(--amber)}
+/* grids/cards */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;transition:.18s;display:block;text-decoration:none}
+.card:hover{border-color:var(--line2);box-shadow:0 10px 30px rgba(13,33,55,.06);transform:translateY(-2px)}
+.card .pnum{font-family:var(--mono);font-size:12px;color:var(--amber);font-weight:500}
+.card h3{margin:6px 0 7px;color:var(--ink)}
+.card p{font-size:14px;color:var(--mid);margin:0}
+.card .more{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:.04em}
+.card.tint{background:var(--bg2);border-color:transparent}
+/* chips */
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:6px}
+.chip{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:20px;background:var(--bluel);color:var(--blue)}
+.chip.amber{background:var(--amberl);color:#b56f00}
+/* method stepper */
+.stepper{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media(max-width:760px){.stepper{grid-template-columns:1fr 1fr}}
+.step{padding:22px 20px;border-right:1px solid var(--line)}
+.step:last-child{border-right:none}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--amber)}
+.step h4{margin:8px 0 4px;font-family:var(--mono);font-weight:500;font-size:14px;letter-spacing:.04em;color:var(--navy);text-transform:uppercase}
+.step p{font-size:13px;margin:0;color:var(--muted)}
+/* measurement band */
+.mband{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden}
+@media(max-width:680px){.mband{grid-template-columns:1fr}}
+.mcell{padding:30px 26px;border-right:1px solid rgba(255,255,255,.14)}
+.mcell:last-child{border-right:none}
+.mcell .big{font-family:var(--serif);font-weight:800;font-size:34px;color:var(--amber)}
+.mcell h4{margin:4px 0 6px}
+.mcell p{font-size:14px;color:#aebfce;margin:0}
+/* callout */
+.callout{border-left:3px solid var(--amber);background:var(--amberl);padding:18px 22px;border-radius:0 8px 8px 0}
+.callout p{margin:0;font-size:15px;color:var(--mid)}
+/* cross band */
+.crossband{background:var(--bluel);border:1px solid #cfe0f5;border-radius:14px;padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+/* footer */
+footer.site{background:var(--navy);color:#9fb0c2;padding:56px 0 28px;margin-top:0}
+.fcols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:860px){.fcols{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fcols{grid-template-columns:1fr}}
+.fcol h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.fcol a{display:block;color:#9fb0c2;font-size:14px;margin-bottom:9px;text-decoration:none}
+.fcol a:hover{color:#fff}
+.fbrand .logo{color:#fff}
+.fbrand p{font-size:14px;color:#9fb0c2;max-width:300px;margin:14px 0}
+.fcontact{font-size:14px;color:#cdd9e6;line-height:1.8}
+.fcontact a{color:#cdd9e6}.fcontact a:hover{color:#fff}
+.fcontact .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6f8198;display:block;margin-top:10px}
+.sister{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.sister .line{font-family:var(--mono);font-size:12px;color:#8497ab}
+.sister .line em{color:var(--amber)}
+.sister .legal a{color:#8497ab;font-size:12.5px;margin-left:16px}
+.sister .legal a:hover{color:#fff}
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none}html{scroll-behavior:auto}}
+.center{text-align:center}
+.mt0{margin-top:0}.mb0{margin-bottom:0}
+.sub-spacer{height:8px}
+</style>
+</head>
+<body>
+
+<header class="site">
+ <div class="wrap nav">
+  <a class="logo" href="index.html">TeamBeam<em>.</em></a>
+  <nav class="nav-links" id="nav">
+   <a href="what-we-do.html">What We Do</a>
+   <a href="who-we-serve.html">Who We Serve</a>
+   <a href="destinations.html">Destinations</a>
+   <a href="why-teambeam.html">Why TeamBeam</a>
+   <a href="resources.html">Resources</a>
+   <a href="about.html">About</a>
+   <a class="us" href="https://teambeam.us">TeamBeam US &rarr;</a>
+   <a class="btn btn-p" href="contact.html">Plan an experience</a>
+  </nav>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+ </div>
+</header>
+<main>
+<section class="hero"><div class="wrap">
+ <span class="kicker reveal">Corporate team experiences &middot; India &amp; worldwide</span>
+ <h1 class="reveal" style="max-width:900px">Team days your people remember &mdash; and you can actually <em>measure</em>.</h1>
+ <p class="lead reveal" style="max-width:640px;margin-top:18px">TeamBeam designs, delivers, and measures corporate team experiences, offsites, and development for India&rsquo;s teams and beyond. No cringe. A reason behind every minute.</p>
+ <div class="btn-row reveal">
+   <a class="btn btn-p" href="contact.html">Plan an experience</a>
+   <a class="btn btn-o" href="why-teambeam.html">See how it works</a>
+ </div>
+ <div class="eyebrow-band reveal" style="margin-top:40px">
+   <span>People</span><span class="dot">&middot;</span><span>Teams</span><span class="dot">&middot;</span><span>Organisations</span><span class="dot">&middot;</span><span>Beyond</span>
+   <span class="dot" style="margin-left:8px">|</span><span style="font-family:var(--mono);color:var(--amber)">Designed. Delivered. Measured.</span>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="grid g2" style="align-items:center;gap:54px">
+  <div class="reveal">
+   <span class="kicker b">The problem</span>
+   <h2>Most team building is forgettable. And no one can tell if it worked.</h2>
+  </div>
+  <div class="reveal">
+   <p class="lead">We start the other way around: diagnose the team, design for the real gap, run it brilliantly &mdash; then measure what changed over the next 60 days. That last part is what makes a budget defensible.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+ <span class="kicker reveal">Where should it happen?</span>
+ <h2 class="reveal" style="margin-bottom:26px">Any format, any mode.</h2>
+ <div class="grid g3"><a class="card reveal" href="delivery-modes.html"><h3>In-Office</h3><p>Bring it to the workplace or a city venue.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="delivery-modes.html"><h3>Away Together</h3><p>Take the team offsite &mdash; near or far.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="delivery-modes.html"><h3>Online</h3><p>Live-hosted &amp; kit-shipped for distributed teams.</p><span class="more">Explore &rarr;</span></a></div>
+</div></section>
+
+<section><div class="wrap">
+ <span class="kicker reveal">Everything we do</span>
+ <h2 class="reveal" style="margin-bottom:26px">Eight ways we bring teams together &mdash; one method underneath.</h2>
+ <div class="grid g4"><a class="card reveal" href="team-experiences.html"><span class="pnum">01</span><h3>Team Experiences</h3><p>Genuinely fun, quietly engineered &mdash; hunts, arenas, mysteries &amp; more.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="impact-csr.html"><span class="pnum">02</span><h3>Impact &amp; CSR</h3><p>Give back together &mdash; and meet your CSR mandate with proof.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="development-facilitation.html"><span class="pnum">03</span><h3>Development &amp; Facilitation</h3><p>Turn a great day into a better team, run by expert facilitators.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="offsites-retreats.html"><span class="pnum">04</span><h3>Offsites &amp; Retreats</h3><p>The whole offsite, handled end-to-end &mdash; from venue to debrief.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="beam-occasions.html"><span class="pnum">05</span><h3>Beam Occasions</h3><p>Mark the moments that matter, the right way.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="beam-journeys.html"><span class="pnum">06</span><h3>Beam Journeys</h3><p>Explore India together &mdash; experiences built into the travel.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="beam-platform.html"><span class="pnum">07</span><h3>The Beam Platform</h3><p>The tech and the proof &mdash; measurement, app, dashboard.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="self-serve-kits.html"><span class="pnum">08</span><h3>Self-Serve &amp; Kits</h3><p>Designed by us, run by you &mdash; kits, playbooks &amp; certification.</p><span class="more">Explore &rarr;</span></a></div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+ <span class="kicker reveal">One method under all of it</span>
+ <h2 class="reveal" style="margin-bottom:26px">Scan &rarr; Design &rarr; Build &rarr; Deliver &rarr; Measure.</h2>
+ 
+<div class="stepper reveal">
+ <div class="step"><span class="n">01</span><h4>Scan</h4><p>We diagnose the team across 8 dimensions before we design anything.</p></div>
+ <div class="step"><span class="n">02</span><h4>Design</h4><p>A Blueprint&trade; built around your real gap &mdash; not a stock package.</p></div>
+ <div class="step"><span class="n">03</span><h4>Build</h4><p>We produce every detail end-to-end, in-house.</p></div>
+ <div class="step"><span class="n">04</span><h4>Deliver</h4><p>Hosted, facilitated, and run so it actually lands on the day.</p></div>
+ <div class="step"><span class="n">05</span><h4>Measure</h4><p>Pulse&trade; &amp; Trace&trade; at Day 14, 30 &amp; 60 &mdash; with an Impact Report&trade;.</p></div>
+</div>
+
+</div></section>
+
+
+<section class="dark">
+ <div class="wrap">
+  <span class="kicker">The difference no one else offers</span>
+  <h2 style="max-width:680px;margin-bottom:10px">We don&rsquo;t end at the event. We measure what changed.</h2>
+  <p class="lead" style="max-width:620px;margin-bottom:30px">BeamDiagnostic&trade; sets the baseline. Then we re-measure on a structured cadence and hand you the proof &mdash; the BeamScore&trade; movement in an Impact Report&trade;.</p>
+  <div class="mband reveal">
+   <div class="mcell"><div class="big">Day 14</div><h4>First signal</h4><p>Early Pulse&trade; check on what shifted right after the experience.</p></div>
+   <div class="mcell"><div class="big">Day 30</div><h4>It&rsquo;s sticking</h4><p>Trace&trade; tracks whether new behaviours are holding in real work.</p></div>
+   <div class="mcell"><div class="big">Day 60</div><h4>The proof</h4><p>BeamScore&trade; movement, written up in your Impact Report&trade;.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section><div class="wrap">
+ <span class="kicker reveal">Built for India&rsquo;s teams</span>
+ <h2 class="reveal" style="max-width:680px">GCCs, IT &amp; product, startups, BFSI, manufacturing &mdash; from 20 to 2,000.</h2>
+ <p class="lead reveal" style="max-width:600px;margin-top:8px">Whatever your industry, role, or the moment you&rsquo;re navigating &mdash; we&rsquo;ll find the right fit. <a href="who-we-serve.html">See who we serve &rarr;</a></p>
+</div></section>
+
+<section class="sec-tight"><div class="wrap">
+ <div class="crossband reveal">
+  <div>
+   <span class="kicker b" style="margin-bottom:6px">Based in or planning something in the United States?</span>
+   <h3 style="margin:0">teambeam.us is our home there &mdash; same method, a team on the ground.</h3>
+  </div>
+  <a class="btn btn-o" href="https://teambeam.us">Visit TeamBeam US &rarr;</a>
+ </div>
+</div></section>
+
+<section class="tint"><div class="wrap center">
+ <span class="kicker">Start here</span>
+ <h2 style="max-width:680px;margin:0 auto 12px">Tell us what you&rsquo;re trying to do.</h2>
+ <p class="lead" style="max-width:560px;margin:0 auto">Tell us what you&rsquo;re trying to do &mdash; we&rsquo;ll design the experience around it.</p>
+ <div class="btn-row" style="justify-content:center">
+   <a class="btn btn-p" href="contact.html">Plan an experience</a>
+   <a class="btn btn-o" href="why-teambeam.html">See how it works</a>
+ </div>
+</div></section></main>
+<footer class="site">
+ <div class="wrap">
+  <div class="fcols">
+   <div class="fbrand">
+     <a class="logo" href="index.html">TeamBeam<em>.</em></a>
+     <p>Outcome-led corporate team experiences, offsites &amp; development &mdash; designed, delivered, and measured. India &amp; worldwide.</p>
+     <div class="fcontact">
+       <span class="lbl">Talk to us</span>
+       <a href="mailto:start@teambeam.in">start@teambeam.in</a><br>
+       <a href="tel:+917517500777">+91 75175 00777</a>
+       <span class="lbl">Visit</span>
+       <a href="https://maps.app.goo.gl/iPyeNsoan3SgJ3H87">Futura, Magarpatta Rd, Kirtane Baugh,<br>Magarpatta, Hadapsar, Pune 411013</a>
+     </div>
+   </div>
+   <div class="fcol">
+     <h5>What We Do</h5>
+     <a href="team-experiences.html">Team Experiences</a>
+     <a href="impact-csr.html">Impact &amp; CSR</a>
+     <a href="development-facilitation.html">Development &amp; Facilitation</a>
+     <a href="offsites-retreats.html">Offsites &amp; Retreats</a>
+     <a href="beam-occasions.html">Beam Occasions</a>
+     <a href="beam-journeys.html">Beam Journeys</a>
+     <a href="beam-platform.html">The Beam Platform</a>
+     <a href="self-serve-kits.html">Self-Serve &amp; Kits</a>
+   </div>
+   <div class="fcol">
+     <h5>Explore</h5>
+     <a href="who-we-serve.html">Who We Serve</a>
+     <a href="destinations.html">Destinations</a>
+     <a href="occasions.html">Occasions</a>
+     <a href="why-teambeam.html">Why TeamBeam</a>
+     <a href="resources.html">Resources</a>
+   </div>
+   <div class="fcol">
+     <h5>Company</h5>
+     <a href="about.html">About</a>
+     <a href="careers.html">Careers</a>
+     <a href="partnerships.html">Partnerships</a>
+     <a href="volunteer.html">Volunteer</a>
+     <a href="contact.html">Contact</a>
+   </div>
+  </div>
+  <div class="sister">
+    <span class="line">TeamBeam India &middot; <a href="https://teambeam.us" style="color:#8497ab">TeamBeam US</a> &mdash; <em>one method, working worldwide.</em></span>
+    <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a></span>
+  </div>
+ </div>
+</footer>
+<script>
+(function(){
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body></html>
