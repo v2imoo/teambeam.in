@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Beam Occasions | TeamBeam India</title>
+<meta name="description" content="Find the right experience by the occasion or the audience - from welcoming new joiners to year-end celebrations - framed so everyone in the room feels part">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D2137;--blue:#1565C0;--amber:#E8940F;--ink:#0D2137;--mid:#3c4a5c;--muted:#6b7888;--faint:#9aa6b4;
+--line:#e6eaf0;--line2:#d3dae3;--bg:#fff;--bg2:#f6f8fb;--bg3:#eef2f7;--navyl:#eaf0f7;--bluel:#e8f1fc;--amberl:#fdf3e3;
+--serif:'Bricolage Grotesque',sans-serif;--sans:'Plus Jakarta Sans',sans-serif;--mono:'Space Mono',monospace;--wrap:1140px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--mid);background:var(--bg);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.narrow{max-width:760px}
+h1,h2,h3,h4,h5{font-family:var(--serif);color:var(--ink);line-height:1.16;letter-spacing:-.015em;font-weight:700}
+h1{font-size:clamp(32px,5vw,52px);font-weight:800}
+h2{font-size:clamp(24px,3.4vw,34px)}
+h3{font-size:21px}
+h4{font-size:16px}
+h5{font-size:15px}
+p{margin-bottom:15px}
+a{color:var(--blue);text-decoration:none}
+em{font-style:normal;color:var(--amber)}
+.kicker{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:14px}
+.kicker.b{color:var(--blue)}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--mid);line-height:1.55}
+.big-p{font-size:18px;color:var(--mid)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:15px;padding:13px 26px;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:.16s;text-decoration:none}
+.btn-p{background:var(--amber);color:var(--navy)}.btn-p:hover{background:#cf820b}
+.btn-o{background:transparent;color:var(--ink);border-color:var(--line2)}.btn-o:hover{border-color:var(--navy);background:var(--bg2)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--mono);font-weight:500;font-size:19px;letter-spacing:.04em;color:var(--navy);text-decoration:none}
+.logo em{color:var(--amber)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--mid);font-size:14.5px;font-weight:500;text-decoration:none;transition:.15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-links .us{font-family:var(--mono);font-size:12px;color:var(--faint);border:1px solid var(--line2);padding:4px 9px;border-radius:6px}
+.nav-links .us:hover{color:var(--navy);border-color:var(--navy)}
+.burger{display:none;background:none;border:0;cursor:pointer;font-size:24px;color:var(--navy)}
+@media(max-width:980px){
+ .nav-links{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 28px 18px;display:none;box-shadow:0 12px 24px rgba(13,33,55,.07)}
+ .nav-links.open{display:flex}
+ .nav-links a{width:100%;padding:11px 0;border-bottom:1px solid var(--line)}
+ .nav-links .btn{margin-top:12px}
+ .burger{display:block}
+}
+.crumb{background:var(--bg2);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+.crumb .wrap{padding-top:10px;padding-bottom:10px;color:var(--muted)}
+.crumb a{color:var(--muted)}.crumb a:hover{color:var(--navy)}
+.crumb b{color:var(--navy);font-weight:500}
+section{padding:clamp(46px,6.5vw,80px) 0}
+.sec-tight{padding:clamp(34px,5vw,56px) 0}
+.dark{background:var(--navy);color:#cdd9e6}
+.dark h1,.dark h2,.dark h3,.dark h4{color:#fff}
+.dark .lead,.dark .big-p{color:#b9c7d6}
+.dark .kicker{color:var(--amber)}
+.tint{background:var(--bg2)}
+.hero{padding-top:clamp(54px,7vw,90px);padding-bottom:clamp(40px,5vw,60px)}
+.eyebrow-band{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--muted)}
+.eyebrow-band .dot{color:var(--amber)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:54px;align-items:start}
+.split-even{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.split,.split-even{grid-template-columns:1fr;gap:26px}}
+@media(max-width:560px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;transition:.18s;display:block;text-decoration:none}
+.card:hover{border-color:var(--line2);box-shadow:0 10px 30px rgba(13,33,55,.06);transform:translateY(-2px)}
+.card h3{margin:2px 0 7px;color:var(--ink)}
+.card p{font-size:14.5px;color:var(--mid);margin:0}
+.card .more{display:inline-block;margin-top:13px;font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:.04em}
+.card.tint{background:var(--bg2);border-color:transparent}
+.card.plain:hover{transform:none;box-shadow:none}
+/* family block */
+.fam{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 28px;margin-bottom:16px}
+.fam h3{margin-bottom:8px}
+.fam .desc{font-size:15px;color:var(--mid);margin-bottom:14px;max-width:760px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;border-top:1px dashed var(--line2);padding-top:14px}
+.meta .m{font-size:13px}
+.meta .m b{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:2px;font-weight:500}
+.meta .m span{color:var(--ink)}
+/* feature list */
+.featlist{list-style:none;margin:6px 0}
+.featlist li{position:relative;padding:10px 0 10px 30px;border-bottom:1px solid var(--line);font-size:15px}
+.featlist li:last-child{border-bottom:none}
+.featlist li:before{content:"";position:absolute;left:2px;top:17px;width:9px;height:9px;border-radius:50%;background:var(--amber)}
+.featlist li b{color:var(--ink)}
+/* stats */
+.statband{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+@media(max-width:680px){.statband{grid-template-columns:1fr 1fr}}
+.stat{padding:26px 22px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat .num{font-family:var(--serif);font-weight:800;font-size:30px;color:var(--navy)}
+.stat .lbl{font-size:13px;color:var(--muted);margin-top:4px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.chip{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:20px;background:var(--bluel);color:var(--blue)}
+.chip.amber{background:var(--amberl);color:#b56f00}
+.stepper{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media(max-width:760px){.stepper{grid-template-columns:1fr 1fr}}
+.step{padding:22px 20px;border-right:1px solid var(--line)}
+.step:last-child{border-right:none}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--amber)}
+.step h4{margin:8px 0 5px;font-family:var(--mono);font-weight:500;font-size:14px;letter-spacing:.04em;color:var(--navy);text-transform:uppercase}
+.step p{font-size:13px;margin:0;color:var(--muted)}
+.mband{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden}
+@media(max-width:680px){.mband{grid-template-columns:1fr}}
+.mcell{padding:30px 26px;border-right:1px solid rgba(255,255,255,.14)}
+.mcell:last-child{border-right:none}
+.mcell .big{font-family:var(--serif);font-weight:800;font-size:32px;color:var(--amber)}
+.mcell h4{margin:4px 0 6px}
+.mcell p{font-size:14px;color:#aebfce;margin:0}
+.callout{border-left:3px solid var(--amber);background:var(--amberl);padding:18px 22px;border-radius:0 8px 8px 0}
+.callout p{margin:0;font-size:15px;color:var(--mid)}
+.callout.blue{border-left-color:var(--blue);background:var(--bluel)}
+/* timeline */
+.tl{position:relative;margin-left:8px;padding-left:30px;border-left:2px solid var(--line2)}
+.tlitem{position:relative;padding:0 0 26px}
+.tlitem:last-child{padding-bottom:0}
+.tlitem:before{content:"";position:absolute;left:-37px;top:3px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--amber)}
+.tlitem .t{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:3px}
+.tlitem h4{margin-bottom:4px}
+.tlitem p{font-size:14.5px;margin:0;color:var(--mid)}
+/* faq */
+.faq{border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line);padding:18px 0}
+.qa h4{font-family:var(--serif);font-size:17px;color:var(--ink);margin-bottom:7px}
+.qa p{font-size:15px;margin:0;color:var(--mid)}
+.crossband{background:var(--bluel);border:1px solid #cfe0f5;border-radius:14px;padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.pilllink{font-family:var(--mono);font-size:12.5px;color:var(--mid);border:1px solid var(--line);border-radius:8px;padding:8px 13px;transition:.15s}
+.pilllink:hover{border-color:var(--navy);color:var(--navy)}
+footer.site{background:var(--navy);color:#9fb0c2;padding:56px 0 28px}
+.fcols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:860px){.fcols{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fcols{grid-template-columns:1fr}}
+.fcol h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.fcol a{display:block;color:#9fb0c2;font-size:14px;margin-bottom:9px;text-decoration:none}
+.fcol a:hover{color:#fff}
+.fbrand .logo{color:#fff}.fbrand p{font-size:14px;color:#9fb0c2;max-width:300px;margin:14px 0}
+.fcontact{font-size:14px;color:#cdd9e6;line-height:1.8}
+.fcontact a{color:#cdd9e6}.fcontact a:hover{color:#fff}
+.fcontact .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6f8198;display:block;margin-top:10px}
+.sister{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.sister .line{font-family:var(--mono);font-size:12px;color:#8497ab}
+.sister .line em{color:var(--amber)}
+.sister .legal a{color:#8497ab;font-size:12.5px;margin-left:16px}
+.sister .legal a:hover{color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none}html{scroll-behavior:auto}}
+.center{text-align:center}.mt0{margin-top:0}.mb0{margin-bottom:0}
+</style>
+
+<!--tb-seo-->
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow">
+<meta name="theme-color" content="#0D2137">
+<meta name="author" content="TeamBeam Outings India">
+<meta name="publisher" content="TeamBeam">
+<meta name="application-name" content="TeamBeam">
+<meta name="apple-mobile-web-app-title" content="TeamBeam">
+<meta name="format-detection" content="telephone=no">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Pune, Maharashtra">
+<meta name="geo.position" content="18.5201;73.9320">
+<meta name="ICBM" content="18.5201, 73.9320">
+<link rel="canonical" href="https://teambeam.in/beam-occasions">
+<link rel="alternate" hreflang="en-in" href="https://teambeam.in/beam-occasions">
+<link rel="alternate" hreflang="x-default" href="https://teambeam.in/beam-occasions">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TeamBeam Outings India">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Beam Occasions | TeamBeam India">
+<meta property="og:description" content="Find the right experience by the occasion or the audience - from welcoming new joiners to year-end celebrations - framed so everyone in the room feels part">
+<meta property="og:url" content="https://teambeam.in/beam-occasions">
+<meta property="og:image" content="https://teambeam.in/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teambeamoutings">
+<meta name="twitter:creator" content="@teambeamoutings">
+<meta name="twitter:title" content="Beam Occasions | TeamBeam India">
+<meta name="twitter:description" content="Find the right experience by the occasion or the audience - from welcoming new joiners to year-end celebrations - framed so everyone in the room feels part">
+<meta name="twitter:image" content="https://teambeam.in/og-cover.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://teambeam.in/#org","name":"TeamBeam","legalName":"TeamBeam Outings India","url":"https://teambeam.in/","slogan":"Designed. Delivered. Measured.","description":"TeamBeam designs, delivers and measures corporate team experiences, offsites and development across India and worldwide.","logo":{"@type":"ImageObject","url":"https://teambeam.in/icon-512.png"},"image":"https://teambeam.in/og-cover.png","email":"start@teambeam.in","telephone":"+91-75175-00777","address":{"@type":"PostalAddress","streetAddress":"WeWork Futura, Magarpatta, Hadapsar","addressLocality":"Pune","addressRegion":"Maharashtra","postalCode":"411013","addressCountry":"IN"},"areaServed":[{"@type":"Country","name":"India"},{"@type":"Place","name":"Worldwide"}],"sameAs":["https://www.linkedin.com/company/teambeam","https://www.instagram.com/teambeamoutings","https://x.com/teambeamoutings","https://www.youtube.com/@teambeamoutings","https://www.facebook.com/teambeamoutings","https://www.teambeam.us/"]},{"@type":"WebSite","@id":"https://teambeam.in/#website","url":"https://teambeam.in/","name":"TeamBeam India","publisher":{"@id":"https://teambeam.in/#org"},"inLanguage":"en-IN"},{"@type":"WebPage","@id":"https://teambeam.in/beam-occasions#webpage","url":"https://teambeam.in/beam-occasions","name":"Beam Occasions | TeamBeam India","description":"Find the right experience by the occasion or the audience - from welcoming new joiners to year-end celebrations - framed so everyone in the room feels part","isPartOf":{"@id":"https://teambeam.in/#website"},"about":{"@id":"https://teambeam.in/#org"},"inLanguage":"en-IN"},{"@type":"BreadcrumbList","@id":"https://teambeam.in/beam-occasions#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://teambeam.in/"},{"@type":"ListItem","position":2,"name":"What We Do","item":"https://teambeam.in/what-we-do"},{"@type":"ListItem","position":3,"name":"Beam Occasions"}]}]}</script>
+
+
+
+<style id="tb-usmatch">
+body{font-size:17px;background:#fff;color:var(--mid)}
+h1,h2,h3,h4,h5{color:var(--ink)}
+.lead{font-size:clamp(17px,2vw,20px)}
+.big-p{color:var(--mid)}
+em{color:var(--amber)}
+/* logo */
+.logo{display:inline-flex;align-items:baseline;gap:7px;white-space:nowrap;font-family:var(--serif);text-decoration:none;line-height:1}
+.logo .lam{font-family:var(--serif);font-weight:800;font-size:1.3rem;color:var(--amber)}
+.logo .wm{font-family:var(--serif);font-weight:800;font-size:1.04rem;letter-spacing:.045em;color:var(--navy)}
+.logo .wm b{color:var(--amber);font-weight:800;margin-left:.3em}
+footer.site .logo .wm{color:#fff}
+/* market switch (IN current) */
+.mkt{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.06em;border:1px solid var(--line2);border-radius:999px;padding:.32em .46em .32em .32em;background:#fff}
+.mkt .mkt-in{background:var(--navy);color:#fff;font-weight:700;padding:.28em .6em;border-radius:999px}
+.mkt .mkt-sep{color:var(--faint);opacity:.8;padding:0 1px}
+.mkt .mkt-us{color:var(--muted);font-weight:600;padding:.28em .55em;border-radius:999px;text-decoration:none;transition:.18s}
+.mkt .mkt-us:hover{background:var(--amber);color:#3a2400}
+/* buttons — US pill */
+.btn{border-radius:999px;font-family:var(--sans);font-weight:600;transition:transform .25s cubic-bezier(.2,.7,.3,1),box-shadow .25s,background .2s,color .2s}
+.btn-p{background:var(--amber)!important;color:#3a2400!important;border:1.5px solid transparent!important;box-shadow:0 10px 24px rgba(232,148,15,.32)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(232,148,15,.42)}
+.btn-o{background:transparent!important;color:var(--navy)!important;border:1.5px solid var(--line2)!important}
+.btn-o:hover{border-color:var(--navy)!important;transform:translateY(-2px)}
+/* eyebrow/kicker = amber like US */
+.kicker{color:var(--amber)}
+.kicker.b{color:var(--blue)}
+/* stat + method numbers (light theme — keep navy/amber, sized up) */
+.stat .num{color:var(--navy);font-size:clamp(34px,4vw,42px)}
+.step h4{color:var(--navy)}
+/* footer socials */
+.fsocial{display:flex;gap:12px;margin-top:16px}
+.fsocial a{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#cdd9e6;transition:.15s}
+.fsocial a:hover{background:var(--amber);color:var(--navy);border-color:var(--amber)}
+.fsocial svg{width:16px;height:16px;fill:currentColor}
+/* clean sticky header (no float, no rainbow, no animation) */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;width:100%!important;margin:0!important;box-shadow:none!important}
+header.site::after{display:none!important}
+.tb-navitem>a .cev{opacity:.45;font-size:.5rem}
+</style>
+<style id="tb-warm">
+:root{--coral:#FF6B4A;--teal:#0FB5A6;--purple:#7C5CFC;--peach:#FFF3E8;--sky:#EAF2FF;--mint:#E9F8F0;--lav:#F2EEFF}
+body{background:#FFF9F1!important;color:#2f3c4a}
+/* soft rotating pastel sections — playful, not white */
+section:nth-of-type(4n+1){background:transparent}
+section:nth-of-type(4n+2){background:var(--peach)}
+section:nth-of-type(4n+3){background:var(--sky)}
+section:nth-of-type(4n){background:var(--mint)}
+.tint{background:var(--lav)!important}
+.dark{background:var(--navy)!important}
+/* gradient hero */
+.hero{background:linear-gradient(135deg,#FFF0DE 0%,#FDE6F0 46%,#E7EFFF 100%)!important}
+/* colourful kickers per section */
+section:nth-of-type(4n+1) .kicker{color:var(--amber)}
+section:nth-of-type(4n+2) .kicker{color:var(--coral)}
+section:nth-of-type(4n+3) .kicker{color:var(--blue)}
+section:nth-of-type(4n) .kicker{color:var(--teal)}
+.kicker.b{color:var(--blue)!important}
+/* cards pop on the pastels + colourful hover */
+.card{background:#fff!important;border-color:#F1E7D9!important;transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .28s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(255,107,74,.18)!important;border-color:var(--coral)!important}
+.card .more{color:var(--coral)!important;font-weight:600}
+/* vibrant numbers */
+.stat .num{color:var(--coral)!important;font-size:clamp(34px,4vw,44px)}
+.stat .lbl{color:#5b6b7d}
+.step .n{color:var(--amber)!important}
+.step h4{color:var(--navy)!important}
+.statband,.stepper{background:#fff!important;border-color:#F1E7D9!important}
+/* ghost button hover pops coral */
+.btn-o:hover{border-color:var(--coral)!important;color:var(--coral)!important}
+/* heading energy */
+.hero h1{font-size:clamp(34px,5.2vw,58px);letter-spacing:-.03em}
+em{color:var(--coral)!important}
+</style>
+</head>
+<body data-group="outings">
+
+<header class="site"><div class="wrap nav">
+  <a class="logo" href="/"><span class="lam">&Lambda;</span><span class="wm">TEAMBEAM <b>OUTINGS</b></span></a>
+  <nav class="nav-links" id="nav">
+   <a href="what-we-do">What We Do</a>
+   <a href="who-we-serve">Who We Serve</a>
+   <a href="destinations">Destinations</a>
+   <a href="why-teambeam">Why TeamBeam</a>
+   <a href="resources">Resources</a>
+   <a href="about">About</a>
+   <span class="mkt"><span class="mkt-in" aria-current="page">IN</span><span class="mkt-sep">&harr;</span><a class="mkt-us" href="https://www.teambeam.us/">US</a></span>
+   <a class="btn btn-p" href="contact">Plan an experience</a>
+  </nav>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+</div></header>
+<div class="crumb"><div class="wrap"><a href="/">Home</a> &rsaquo; <a href="what-we-do">What We Do</a> &rsaquo; <b>Beam Occasions</b></div></div><main><section class="hero"><div class="wrap">
+ <span class="kicker reveal">Beam Occasions &middot; pillar 5</span>
+ <h1 class="reveal" style="max-width:880px">Celebrate what matters &mdash; the right way.</h1>
+ <p class="lead reveal" style="max-width:660px;margin-top:18px">Find the right experience by the occasion or the audience &mdash; from welcoming new joiners to year-end celebrations &mdash; framed so everyone in the room feels part of it.</p>
+ <div class="btn-row reveal"><a class="btn btn-p" href="contact">Plan an experience</a><a class="btn btn-o" href="what-we-do">All of What We Do</a></div>
+</div></section><section><div class="wrap"><div class="split">
+ <div class="reveal"><span class="kicker b">The short version</span><h2>Every moment deserves better than a generic party.</h2></div>
+ <div class="reveal"><p class="big-p">Teams hit a lot of moments worth marking &mdash; new people joining, a target smashed, a festival, a work anniversary, the end of a long year. Too often they get the same tired pizza-and-cake treatment, or get skipped entirely.</p><p>Beam Occasions helps you match the moment to the right format and the right tone &mdash; warm, inclusive and genuinely enjoyable. Browse by who it&rsquo;s for, or by how it should run.</p></div>
+</div></div></section><section class="tint"><div class="wrap">
+ <span class="kicker reveal">Why ours is different</span>
+ <h2 class="reveal" style="max-width:680px;margin-bottom:18px">Inclusive by design, matched to the moment.</h2>
+ <div class="reveal" style="max-width:820px"><ul class="featlist"><li><b>Framed for everyone.</b> We build celebrations around the shared feeling &mdash; light, harvest, new beginnings &mdash; so people of every background join in.</li><li><b>Right-sized.</b> From a warm thirty-minute team ritual to a full celebration evening &mdash; tasteful or big, your call.</li><li><b>Matched, not random.</b> We pick the format from who it&rsquo;s for and how it should feel, so it actually suits the occasion.</li><li><b>Still measured.</b> Even a celebration tells us something about belonging &mdash; and we track it.</li></ul></div>
+</div></section><section><div class="wrap">
+ <span class="kicker reveal">Browse by</span>
+ <h2 class="reveal" style="max-width:680px;margin-bottom:26px">Two simple ways in.</h2>
+ 
+ <div class="grid g2"><a class="card reveal" href="beam-occasions-by-audience"><h3>By Audience</h3><p>Leaders, new joiners, the whole company, or a cross-team mixer &mdash; start from who the moment is for, and we&rsquo;ll match the format.</p><span class="more">Explore &rarr;</span></a><a class="card reveal" href="beam-occasions-by-mode"><h3>By Mode</h3><p>In person, hybrid or fully online &mdash; pick how it needs to run for a team that may be spread across cities.</p><span class="more">Explore &rarr;</span></a></div>
+</div></section><section class="tint"><div class="wrap"><div class="split">
+ <div class="reveal"><span class="kicker">How it actually runs</span><h2>From first call to final report.</h2><p class="big-p" style="margin-top:10px">Every job follows the same simple path. No surprises, no scramble on the day.</p></div>
+ <div class="reveal"><div class="tl"><div class="tlitem reveal"><div class="t">Pick</div><h4>Tell us the occasion</h4><p>Welcome, milestone, festival, anniversary, year-end &mdash; whatever you&rsquo;re marking.</p></div><div class="tlitem reveal"><div class="t">Match</div><h4>We match audience and mode</h4><p>The format follows who it&rsquo;s for and how it should feel.</p></div><div class="tlitem reveal"><div class="t">Run</div><h4>We design and host it</h4><p>Set up, run and hosted so it feels like the moment deserved.</p></div><div class="tlitem reveal"><div class="t">Measure</div><h4>We read the belonging</h4><p>A light follow-up tells you whether the team felt closer for it.</p></div></div></div>
+</div></div></section><section><div class="wrap">
+ <span class="kicker reveal">Who it&rsquo;s for</span>
+ <h2 class="reveal" style="max-width:640px;margin-bottom:24px">Especially good when&hellip;</h2>
+ <div class="grid g4"><div class="card plain reveal"><h3 style="font-size:18px">New-joiner cohorts</h3><p>Welcomes that make people feel they made the right choice.</p></div><div class="card plain reveal"><h3 style="font-size:18px">Company-wide moments</h3><p>Celebrations the whole org shares in.</p></div><div class="card plain reveal"><h3 style="font-size:18px">Cross-team mixers</h3><p>Bringing functions together socially, on purpose.</p></div><div class="card plain reveal"><h3 style="font-size:18px">Leadership gatherings</h3><p>Marking moments at the top, the right way.</p></div></div>
+</div></section><section class="tint"><div class="wrap">
+ <div class="callout reveal"><p><strong>And like everything we do, it&rsquo;s measured.</strong> We set a baseline with BeamDiagnostic&trade; and re-check at Day 14, 30 and 60, so you end up with proof &mdash; not just a good memory. <a href="why-teambeam">See how it works &rarr;</a></p></div>
+ <div class="pillrow"><a class="pilllink" href="occasions">See the occasions calendar &rarr;</a><a class="pilllink" href="team-experiences">Browse experiences &rarr;</a><a class="pilllink" href="offsites-retreats">Make it an event &rarr;</a></div>
+</div></section><section><div class="wrap">
+ <span class="kicker reveal">Common questions</span>
+ <h2 class="reveal" style="margin-bottom:24px">Things people ask about Beam Occasions</h2>
+ <div class="faq"><div class="qa reveal"><h4>What counts as an occasion?</h4><p>Anything worth marking &mdash; welcoming new joiners, hitting a target, a festival, a work anniversary, year-end. If it matters to the team, it&rsquo;s an occasion.</p></div><div class="qa reveal"><h4>How do you keep festivals inclusive?</h4><p>We frame celebrations around the shared feeling &mdash; light, harvest, new beginnings &mdash; so everyone joins in, whatever they personally observe.</p></div><div class="qa reveal"><h4>Can you do something small and tasteful?</h4><p>Absolutely. Occasions range from a warm thirty-minute team ritual to a full celebration evening.</p></div><div class="qa reveal"><h4>Is there a calendar to plan around?</h4><p>Yes &mdash; our Occasions calendar lays out the year&rsquo;s natural moments so you can plan ahead.</p></div></div>
+</div></section><section class="tint"><div class="wrap center">
+ <span class="kicker">Start here</span>
+ <h2 style="max-width:700px;margin:0 auto 14px">Tell us the moment &mdash; we&rsquo;ll make it land.</h2>
+ <p class="lead" style="max-width:600px;margin:0 auto">Tell us what you&rsquo;re trying to fix or celebrate, and we&rsquo;ll design the experience around it. No hard sell &mdash; just a real conversation about your team.</p>
+ <div class="btn-row" style="justify-content:center"><a class="btn btn-p" href="contact">Plan an experience</a><a class="btn btn-o" href="why-teambeam">See how it works</a></div>
+</div></section></main>
+<footer class="site"><div class="wrap">
+  <div class="fcols">
+   <div class="fbrand">
+     <a class="logo" href="/"><span class="lam">&Lambda;</span><span class="wm">TEAMBEAM <b>OUTINGS</b></span></a>
+     <p>Outcome-led corporate team experiences, offsites &amp; development &mdash; designed, delivered, and measured. India &amp; worldwide.</p>
+     <div class="fcontact">
+       <span class="lbl">Talk to us</span>
+       <a href="mailto:start@teambeam.in">start@teambeam.in</a><br>
+       <a href="tel:+917517500777">+91 75175 00777</a>
+       <span class="lbl">Visit</span>
+       <a href="https://maps.app.goo.gl/iPyeNsoan3SgJ3H87">Futura, Magarpatta Rd, Kirtane Baugh,<br>Magarpatta, Hadapsar, Pune 411013</a>
+     </div>
+   </div>
+   <div class="fcol"><h5>What We Do</h5>
+     <a href="team-experiences">Team Experiences</a>
+     <a href="impact-csr">Impact &amp; CSR</a>
+     <a href="development-facilitation">Development &amp; Facilitation</a>
+     <a href="offsites-retreats">Offsites &amp; Retreats</a>
+     <a href="beam-occasions">Beam Occasions</a>
+     <a href="beam-journeys">Beam Journeys</a>
+     <a href="beam-platform">The Beam Platform</a>
+     <a href="self-serve-kits">Self-Serve &amp; Kits</a></div>
+   <div class="fcol"><h5>Explore</h5>
+     <a href="who-we-serve">Who We Serve</a>
+     <a href="destinations">Destinations</a>
+     <a href="occasions">Occasions</a>
+     <a href="why-teambeam">Why TeamBeam</a>
+     <a href="resources">Resources</a></div>
+   <div class="fcol"><h5>Company</h5>
+     <a href="about">About</a>
+     <a href="careers">Careers</a>
+     <a href="partnerships">Partnerships</a>
+     <a href="volunteer">Volunteer</a>
+     <a href="contact">Contact</a></div>
+  </div>
+  <div class="fsocial">
+<a href="https://www.linkedin.com/company/teambeam" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM0 8h5v16H0V8zm7.5 0H12v2.2h.07c.63-1.2 2.17-2.47 4.46-2.47C21.4 7.73 24 10 24 14.6V24h-5v-8.4c0-2-.7-3.36-2.5-3.36-1.36 0-2.17.92-2.53 1.8-.13.32-.16.76-.16 1.2V24h-5V8z"/></svg></a>
+<a href="https://www.instagram.com/teambeamoutings" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.38A4.62 4.62 0 1 0 16.62 12 4.63 4.63 0 0 0 12 7.38zm0 7.62A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm5.88-7.8a1.08 1.08 0 1 1-1.08-1.08 1.08 1.08 0 0 1 1.08 1.08zM21.94 8c-.05-1.17-.32-2.2-1.18-3.06S18.87 3.61 17.7 3.56C16.5 3.5 12.9 3.5 11.7 3.56c-1.17.05-2.2.32-3.06 1.18S7.61 6.83 7.56 8C7.5 9.2 7.5 12.8 7.56 14c.05 1.17.32 2.2 1.18 3.06s1.89 1.13 3.06 1.18c1.2.06 4.8.06 6 0 1.17-.05 2.2-.32 3.06-1.18s1.13-1.89 1.18-3.06c.06-1.2.06-4.8 0-6zM19.98 15.3a3 3 0 0 1-1.69 1.69c-1.17.46-3.95.36-5.24.36s-4.07.1-5.24-.36a3 3 0 0 1-1.69-1.69c-.46-1.17-.36-3.95-.36-5.24s-.1-4.07.36-5.24a3 3 0 0 1 1.69-1.69C8.65 4.34 11.43 4.44 12.72 4.44s4.07-.1 5.24.36a3 3 0 0 1 1.69 1.69c.46 1.17.36 3.95.36 5.24s.1 4.07-.36 5.24z"/></svg></a>
+<a href="https://x.com/teambeamoutings" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.3 8.34L23 22h-6.6l-5.17-6.76L5.3 22H2l7.8-8.92L1.6 2h6.77l4.67 6.18L18.9 2zm-1.16 18h1.83L7.3 3.9H5.34L17.74 20z"/></svg></a>
+<a href="https://www.youtube.com/@teambeamoutings" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.5a3 3 0 0 0-2.11-2.12C19.5 3.85 12 3.85 12 3.85s-7.5 0-9.39.53A3 3 0 0 0 .5 6.5 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.5 3 3 0 0 0 2.11 2.12C4.5 20.15 12 20.15 12 20.15s7.5 0 9.39-.53a3 3 0 0 0 2.11-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+<a href="https://www.facebook.com/teambeamoutings" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.95.93-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0 0 24 12z"/></svg></a>
+</div><div class="sister">
+    <span class="line">TeamBeam India &middot; <a href="https://teambeam.us" style="color:#8497ab">TeamBeam US</a> &mdash; <em>one method, working worldwide.</em></span>
+    <span class="legal"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="accessibility">Accessibility</a></span>
+  </div>
+</div></footer>
+<script>
+(function(){
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.10});
+ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+<style id="tb-dropdown-css">
+.tb-navitem{position:relative;display:inline-flex;align-items:center}
+.tb-navitem>a .cev{display:inline-block;margin-left:5px;transition:transform .2s;font-size:.7em;opacity:.7}
+.tb-navitem:hover>a .cev{transform:rotate(180deg)}
+.tb-dd{position:absolute;top:100%;left:0;padding-top:14px;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s;z-index:80}
+.tb-navitem:hover .tb-dd{opacity:1;visibility:visible;transform:translateY(0)}
+.tb-dd-inner{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 46px rgba(13,33,55,.14);padding:20px 22px;display:flex;gap:30px;min-width:max-content}
+.tb-dd-col{min-width:170px}
+.tb-dd-col h6{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin:0 0 10px}
+.tb-dd-col a{display:block;color:var(--mid)!important;font-size:14px;font-weight:500;padding:5px 0;border:0!important;white-space:nowrap}
+.tb-dd-col a:hover{color:var(--navy)!important}
+.tb-dd-all{margin-top:12px;display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11.5px;color:var(--blue)!important;font-weight:700}
+@media(max-width:1000px){
+ .tb-navitem{display:block;width:100%}
+ .tb-dd{position:static;padding-top:0;opacity:1;visibility:visible;transform:none}
+ .tb-dd-inner{flex-direction:column;gap:14px;box-shadow:none;border:0;border-radius:0;padding:4px 0 10px 12px;min-width:0}
+ .tb-dd-col{min-width:0}
+ .tb-navitem>a .cev{float:right}
+}
+</style>
+<script id="tb-dropdown">
+(function(){
+ var nav=document.getElementById('nav'); if(!nav) return;
+ var M={"what-we-do": {"title": "What We Do", "cols": [{"h": "Experiences", "links": [["Team Experiences", "team-experiences"], ["Impact & CSR", "impact-csr"], ["Offsites & Retreats", "offsites-retreats"], ["Beam Occasions", "beam-occasions"]]}, {"h": "Programs & Platform", "links": [["Development & Facilitation", "development-facilitation"], ["Beam Journeys", "beam-journeys"], ["The Beam Platform", "beam-platform"], ["Self-Serve & Kits", "self-serve-kits"]]}]}, "who-we-serve": {"title": "Who We Serve", "cols": [{"h": "By Industry", "links": [["Technology", "who-we-serve-industries-technology"], ["Financial Services", "who-we-serve-industries-financial-services"], ["Healthcare", "who-we-serve-industries-healthcare"], ["Professional Services", "who-we-serve-industries-professional-services"]]}, {"h": "By Role", "links": [["Executives", "who-we-serve-roles-executives"], ["People & HR", "who-we-serve-roles-people-hr"], ["Managers", "who-we-serve-roles-managers"], ["Employees", "who-we-serve-roles-employees"]]}, {"h": "By Moment", "links": [["Onboarding", "who-we-serve-moments-onboarding"], ["Distributed teams", "who-we-serve-moments-distributed-team-connection"], ["Post-merger", "who-we-serve-moments-post-merger"], ["Burnout recovery", "who-we-serve-moments-burnout-recovery"]]}]}, "destinations": {"title": "Destinations", "cols": [{"h": "India regions", "links": [["West", "destinations-india-west"], ["South", "destinations-india-south"], ["North", "destinations-india-north"], ["Goa & Coast", "destinations-india-goa-coast"]]}, {"h": "Popular", "links": [["Lonavala", "destinations-india-lonavala"], ["Goa", "destinations-india-goa"], ["Coorg", "destinations-india-coorg"], ["Udaipur", "destinations-india-udaipur"]]}, {"h": "Beyond India", "links": [["Dubai", "destinations-asia-dubai"], ["Singapore", "destinations-asia-singapore"], ["Bali", "destinations-asia-bali"], ["Worldwide", "destinations-worldwide"]]}]}, "why-teambeam": {"title": "Why TeamBeam", "cols": [{"h": "Our difference", "links": [["The Method", "why-teambeam-the-method"], ["Measurement & Impact", "why-teambeam-measurement-impact"], ["Results", "why-teambeam-results"]]}]}, "resources": {"title": "Resources", "cols": [{"h": "Read & listen", "links": [["Insights", "resources-insights"], ["Podcast", "resources-podcast"]]}, {"h": "Free tools", "links": [["Idea Generator", "resources-idea-generator"], ["Offsite ROI Calculator", "resources-offsite-roi-calculator"], ["Team Health Snapshot", "resources-team-health-snapshot"], ["Flight Hub Finder", "resources-flight-hub-finder"]]}]}};
+ Object.keys(M).forEach(function(key){
+   var a=nav.querySelector('a[href="'+key+'"]'); if(!a) return;
+   var item=document.createElement('span'); item.className='tb-navitem';
+   a.parentNode.insertBefore(item,a); item.appendChild(a);
+   a.insertAdjacentHTML('beforeend','<span class="cev">&#9662;</span>');
+   var cfg=M[key], inner='';
+   cfg.cols.forEach(function(c){
+     var links=c.links.map(function(x){return '<a href="'+x[1]+'">'+x[0]+'</a>';}).join('');
+     inner+='<div class="tb-dd-col"><h6>'+c.h+'</h6>'+links+'</div>';
+   });
+   inner+='<div class="tb-dd-col"><a class="tb-dd-all" href="'+key+'">View all &rarr;</a></div>';
+   var dd=document.createElement('div'); dd.className='tb-dd';
+   dd.innerHTML='<div class="tb-dd-inner">'+inner+'</div>';
+   item.appendChild(dd);
+   item.addEventListener('mouseenter',function(){
+     if(window.innerWidth<=1000) return;
+     var pan=dd.querySelector('.tb-dd-inner'); pan.style.left=''; pan.style.right='';
+     var r=item.getBoundingClientRect(), w=pan.offsetWidth;
+     if(r.left+w>window.innerWidth-16){ dd.style.left='auto'; dd.style.right='0'; }
+     else { dd.style.left='0'; dd.style.right='auto'; }
+   });
+ });
+})();
+</script>
+<div class="tb-beam-fill"></div><div class="tb-beam-dot"></div></div>
+
+
+</body></html>

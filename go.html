@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeamBeam — Start Here · Team Experiences, Designed · Delivered · Measured</title>
+<meta name="description" content="One TeamBeam, two homes. We design, deliver, and measure corporate team experiences — and serve teams worldwide from India and the United States. Choose your home to continue.">
+<link rel="canonical" href="https://teambeam.in/go">
+<meta property="og:title" content="TeamBeam — Start Here">
+<meta property="og:description" content="One TeamBeam, two homes. Team experiences that are diagnosed, designed around data, and measured at Day 14, 30, and 60. Choose India or the United States.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://teambeam.in/go">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0D2137; --navy-2:#0A1A2C; --blue:#1565C0; --blue-soft:#3B82D6;
+    --amber:#E8940F; --paper:#F6F3EC; --mist:rgba(246,243,236,0.66);
+    --mist-2:rgba(246,243,236,0.46); --line:rgba(246,243,236,0.14);
+    --card:rgba(255,255,255,0.035); --card-2:rgba(255,255,255,0.05);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--navy);color:var(--paper);
+    overflow-x:hidden;position:relative;line-height:1.55}
+  body::before{content:"";position:fixed;top:-28%;left:50%;width:150vw;height:150vw;
+    max-width:1500px;max-height:1500px;transform:translateX(-50%);
+    background:radial-gradient(circle at 50% 38%, rgba(21,101,192,0.30) 0%, rgba(21,101,192,0.06) 38%, transparent 62%);
+    pointer-events:none;z-index:0}
+  body::after{content:"";position:fixed;inset:0;
+    background:linear-gradient(180deg, transparent 0%, rgba(10,26,44,0.6) 100%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,0.012) 0 1px, transparent 1px 3px);
+    pointer-events:none;z-index:0}
+  .wrap{position:relative;z-index:1;width:100%;max-width:1060px;margin:0 auto;
+    padding:0 clamp(20px,5vw,40px)}
+
+  /* top bar */
+  .top{display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:clamp(22px,4vw,34px) 0;opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) .04s forwards}
+  .mark{display:flex;align-items:center;gap:11px}
+  .glyph{width:32px;height:32px;flex:none;position:relative}
+  .glyph span{position:absolute;left:50%;top:0;width:2px;height:100%;background:var(--amber);
+    transform-origin:bottom center;border-radius:2px}
+  .glyph span:nth-child(1){transform:translateX(-50%) rotate(-26deg);opacity:.55}
+  .glyph span:nth-child(2){transform:translateX(-50%) rotate(0)}
+  .glyph span:nth-child(3){transform:translateX(-50%) rotate(26deg);opacity:.55}
+  .wordmark{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.01em}
+  .wordmark b{color:var(--amber)}
+  .badges{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+  .badge{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--mist);border:1px solid var(--line);border-radius:999px;padding:6px 11px;white-space:nowrap}
+
+  /* hero */
+  .hero{padding:clamp(26px,5vh,58px) 0 clamp(30px,5vh,52px);max-width:760px}
+  .kicker{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--amber);margin-bottom:18px;opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) .12s forwards}
+  h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.02em;
+    font-size:clamp(32px,6vw,58px);margin-bottom:20px;
+    opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) .18s forwards}
+  h1 em{font-style:normal;color:var(--amber)}
+  .sub{font-size:clamp(15px,2vw,18.5px);color:var(--mist);max-width:600px;
+    opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) .26s forwards}
+  .sub b{color:var(--paper);font-weight:600}
+
+  /* pathways */
+  .section-tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--mist-2);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .section-tag::after{content:"";flex:1;height:1px;background:var(--line)}
+  .doors{display:grid;grid-template-columns:1fr 1fr;gap:clamp(13px,2vw,18px);margin-bottom:clamp(40px,7vh,72px)}
+  @media(max-width:680px){.doors{grid-template-columns:1fr}}
+  .door{position:relative;display:flex;flex-direction:column;gap:18px;text-decoration:none;color:inherit;
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:clamp(22px,2.6vw,30px);overflow:hidden;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,background .35s;
+    opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .door:nth-child(2){animation-delay:.34s}
+  .door:nth-child(3){animation-delay:.42s}
+  .door::after{content:"";position:absolute;inset:0;border-radius:18px;opacity:0;transition:opacity .4s;pointer-events:none}
+  .door.in::after{background:radial-gradient(120% 80% at 80% 0%, rgba(59,130,214,0.18), transparent 55%)}
+  .door.us::after{background:radial-gradient(120% 80% at 80% 0%, rgba(232,148,15,0.16), transparent 55%)}
+  .door:hover{transform:translateY(-4px);background:var(--card-2)}
+  .door.in:hover{border-color:rgba(59,130,214,0.55)}
+  .door.us:hover{border-color:rgba(232,148,15,0.5)}
+  .door:hover::after{opacity:1}
+  .door:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+  .door-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .flag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--mist);display:flex;align-items:center;gap:8px}
+  .flag i{width:9px;height:9px;border-radius:50%}
+  .door.in .flag i{background:var(--blue-soft);box-shadow:0 0 0 4px rgba(59,130,214,.16)}
+  .door.us .flag i{background:var(--amber);box-shadow:0 0 0 4px rgba(232,148,15,.16)}
+  .domain{font-family:'Space Mono',monospace;font-size:12px;color:var(--paper);opacity:.85}
+  .home-tag{position:absolute;top:16px;right:16px;font-family:'Space Mono',monospace;font-size:9px;
+    letter-spacing:.13em;text-transform:uppercase;border-radius:999px;padding:4px 9px;display:none}
+  .door.in .home-tag{background:rgba(59,130,214,0.2);color:#bcd9f5;display:block}
+  .hint-tag{position:absolute;top:16px;right:16px;font-family:'Space Mono',monospace;font-size:9px;
+    letter-spacing:.13em;text-transform:uppercase;background:var(--amber);color:var(--navy);
+    border-radius:999px;padding:4px 9px;display:none}
+  .door.suggested .home-tag{display:none}
+  .door.suggested .hint-tag{display:block}
+  .door-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(25px,3.4vw,31px);
+    letter-spacing:-.02em;line-height:1.05}
+  .door-lead{font-size:13.5px;color:var(--mist);margin-top:7px}
+  .door-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:2px}
+  .door-list li{font-size:13px;color:var(--mist);display:flex;gap:9px;align-items:flex-start}
+  .door-list li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--amber);
+    margin-top:7px;flex:none}
+  .go{display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:12.5px;
+    color:var(--amber);font-weight:500;margin-top:4px}
+  .go svg{transition:transform .3s}
+  .door:hover .go svg{transform:translateX(5px)}
+
+  /* US prospect reassurance strip */
+  .reassure{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between;
+    background:linear-gradient(90deg, rgba(232,148,15,0.10), rgba(232,148,15,0.03));
+    border:1px solid rgba(232,148,15,0.22);border-radius:14px;padding:18px 22px;
+    margin-bottom:clamp(46px,8vh,80px);
+    opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) .5s forwards}
+  .reassure p{font-size:14px;color:var(--paper)}
+  .reassure p b{color:var(--amber)}
+  .reassure a{flex:none;text-decoration:none;font-family:'Space Mono',monospace;font-size:12.5px;
+    color:var(--navy);background:var(--amber);padding:11px 18px;border-radius:999px;font-weight:500;
+    display:inline-flex;align-items:center;gap:8px;transition:transform .25s}
+  .reassure a:hover{transform:translateX(3px)}
+
+  /* method strip */
+  .method{margin-bottom:clamp(46px,8vh,80px)}
+  .method h2,.why h2,.contact h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;
+    font-size:clamp(22px,3.4vw,30px);letter-spacing:-.01em;margin-bottom:10px}
+  .lead{font-size:15px;color:var(--mist);max-width:620px;margin-bottom:26px}
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  @media(max-width:760px){.flow{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:420px){.flow{grid-template-columns:1fr}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 15px}
+  .step .n{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.13em;color:var(--amber);margin-bottom:8px}
+  .step .t{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;margin-bottom:5px}
+  .step .d{font-size:11.5px;color:var(--mist-2);line-height:1.45}
+  .measure{margin-top:18px;font-size:13.5px;color:var(--mist);display:flex;align-items:center;gap:10px}
+  .measure b{color:var(--paper);font-weight:600}
+  .pip{font-family:'Space Mono',monospace;font-size:11px;color:var(--amber);border:1px solid rgba(232,148,15,0.3);
+    border-radius:999px;padding:3px 9px}
+
+  /* why */
+  .why{margin-bottom:clamp(46px,8vh,80px)}
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:680px){.why-grid{grid-template-columns:1fr}}
+  .why-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .why-card h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;margin-bottom:7px}
+  .why-card p{font-size:13.5px;color:var(--mist);line-height:1.55}
+
+  /* contact */
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:clamp(24px,3vw,34px);margin-bottom:clamp(40px,7vh,64px)}
+  .contact .lead{margin-bottom:20px}
+  .ccols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:620px){.ccols{grid-template-columns:1fr;gap:18px}}
+  .ccol .h{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--mist-2);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .ccol .h i{width:8px;height:8px;border-radius:50%}
+  .ccol.in .h i{background:var(--blue-soft)} .ccol.us .h i{background:var(--amber)}
+  .ccol a,.ccol span{display:block;font-size:14px;color:var(--paper);text-decoration:none;margin-bottom:6px}
+  .ccol a:hover{color:var(--amber)}
+  .ccol .sm{font-size:12.5px;color:var(--mist-2)}
+
+  /* footer */
+  .foot{padding:26px 0 46px;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+  .promise{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:14px}
+  .promise span{color:var(--amber)}
+  .brandline{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.11em;color:var(--mist-2)}
+  .foot-links{font-family:'Space Mono',monospace;font-size:11.5px;color:var(--mist);display:flex;gap:14px}
+  .foot-links a{color:var(--mist);text-decoration:none}
+  .foot-links a:hover{color:var(--amber)}
+
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}
+    .top,.kicker,h1,.sub,.door,.reassure{opacity:1!important}}
+</style>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0D2137">
+<meta name="geo.region" content="IN-MH"><meta name="geo.placename" content="Pune"><meta name="geo.position" content="18.5201;73.9320"><meta name="ICBM" content="18.5201, 73.9320">
+<link rel="alternate" hreflang="en-in" href="https://teambeam.in/go"><link rel="alternate" hreflang="x-default" href="https://teambeam.in/go">
+<meta property="og:image" content="https://teambeam.in/og-cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="TeamBeam Outings India">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@teambeamoutings"><meta name="twitter:image" content="https://teambeam.in/og-cover.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/icon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://teambeam.in/#local","name":"TeamBeam","url":"https://teambeam.in/","email":"start@teambeam.in","telephone":"+91-75175-00777","image":"https://teambeam.in/og-cover.png","address":{"@type":"PostalAddress","streetAddress":"WeWork Futura, Magarpatta, Hadapsar","addressLocality":"Pune","addressRegion":"Maharashtra","postalCode":"411013","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":18.5201,"longitude":73.9320},"hasMap":"https://maps.app.goo.gl/iPyeNsoan3SgJ3H87","areaServed":[{"@type":"Country","name":"India"},{"@type":"Place","name":"Worldwide"}]}</script>
+
+
+
+<style id="tb-usmatch">
+body{font-size:17px;background:#fff;color:var(--mid)}
+h1,h2,h3,h4,h5{color:var(--ink)}
+.lead{font-size:clamp(17px,2vw,20px)}
+.big-p{color:var(--mid)}
+em{color:var(--amber)}
+/* logo */
+.logo{display:inline-flex;align-items:baseline;gap:7px;white-space:nowrap;font-family:var(--serif);text-decoration:none;line-height:1}
+.logo .lam{font-family:var(--serif);font-weight:800;font-size:1.3rem;color:var(--amber)}
+.logo .wm{font-family:var(--serif);font-weight:800;font-size:1.04rem;letter-spacing:.045em;color:var(--navy)}
+.logo .wm b{color:var(--amber);font-weight:800;margin-left:.3em}
+footer.site .logo .wm{color:#fff}
+/* market switch (IN current) */
+.mkt{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.06em;border:1px solid var(--line2);border-radius:999px;padding:.32em .46em .32em .32em;background:#fff}
+.mkt .mkt-in{background:var(--navy);color:#fff;font-weight:700;padding:.28em .6em;border-radius:999px}
+.mkt .mkt-sep{color:var(--faint);opacity:.8;padding:0 1px}
+.mkt .mkt-us{color:var(--muted);font-weight:600;padding:.28em .55em;border-radius:999px;text-decoration:none;transition:.18s}
+.mkt .mkt-us:hover{background:var(--amber);color:#3a2400}
+/* buttons — US pill */
+.btn{border-radius:999px;font-family:var(--sans);font-weight:600;transition:transform .25s cubic-bezier(.2,.7,.3,1),box-shadow .25s,background .2s,color .2s}
+.btn-p{background:var(--amber)!important;color:#3a2400!important;border:1.5px solid transparent!important;box-shadow:0 10px 24px rgba(232,148,15,.32)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(232,148,15,.42)}
+.btn-o{background:transparent!important;color:var(--navy)!important;border:1.5px solid var(--line2)!important}
+.btn-o:hover{border-color:var(--navy)!important;transform:translateY(-2px)}
+/* eyebrow/kicker = amber like US */
+.kicker{color:var(--amber)}
+.kicker.b{color:var(--blue)}
+/* stat + method numbers (light theme — keep navy/amber, sized up) */
+.stat .num{color:var(--navy);font-size:clamp(34px,4vw,42px)}
+.step h4{color:var(--navy)}
+/* footer socials */
+.fsocial{display:flex;gap:12px;margin-top:16px}
+.fsocial a{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#cdd9e6;transition:.15s}
+.fsocial a:hover{background:var(--amber);color:var(--navy);border-color:var(--amber)}
+.fsocial svg{width:16px;height:16px;fill:currentColor}
+/* clean sticky header (no float, no rainbow, no animation) */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;width:100%!important;margin:0!important;box-shadow:none!important}
+header.site::after{display:none!important}
+.tb-navitem>a .cev{opacity:.45;font-size:.5rem}
+</style>
+<style id="tb-warm">
+:root{--coral:#FF6B4A;--teal:#0FB5A6;--purple:#7C5CFC;--peach:#FFF3E8;--sky:#EAF2FF;--mint:#E9F8F0;--lav:#F2EEFF}
+body{background:#FFF9F1!important;color:#2f3c4a}
+/* soft rotating pastel sections — playful, not white */
+section:nth-of-type(4n+1){background:transparent}
+section:nth-of-type(4n+2){background:var(--peach)}
+section:nth-of-type(4n+3){background:var(--sky)}
+section:nth-of-type(4n){background:var(--mint)}
+.tint{background:var(--lav)!important}
+.dark{background:var(--navy)!important}
+/* gradient hero */
+.hero{background:linear-gradient(135deg,#FFF0DE 0%,#FDE6F0 46%,#E7EFFF 100%)!important}
+/* colourful kickers per section */
+section:nth-of-type(4n+1) .kicker{color:var(--amber)}
+section:nth-of-type(4n+2) .kicker{color:var(--coral)}
+section:nth-of-type(4n+3) .kicker{color:var(--blue)}
+section:nth-of-type(4n) .kicker{color:var(--teal)}
+.kicker.b{color:var(--blue)!important}
+/* cards pop on the pastels + colourful hover */
+.card{background:#fff!important;border-color:#F1E7D9!important;transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .28s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(255,107,74,.18)!important;border-color:var(--coral)!important}
+.card .more{color:var(--coral)!important;font-weight:600}
+/* vibrant numbers */
+.stat .num{color:var(--coral)!important;font-size:clamp(34px,4vw,44px)}
+.stat .lbl{color:#5b6b7d}
+.step .n{color:var(--amber)!important}
+.step h4{color:var(--navy)!important}
+.statband,.stepper{background:#fff!important;border-color:#F1E7D9!important}
+/* ghost button hover pops coral */
+.btn-o:hover{border-color:var(--coral)!important;color:var(--coral)!important}
+/* heading energy */
+.hero h1{font-size:clamp(34px,5.2vw,58px);letter-spacing:-.03em}
+em{color:var(--coral)!important}
+</style>
+</head>
+<body data-group="home">
+<div class="wrap">
+
+  <header class="top">
+    <div class="mark">
+      <div class="glyph"><span></span><span></span><span></span></div>
+      <div class="wordmark">TEAMBEAM<b>&nbsp;OUTINGS</b></div>
+    </div>
+    <div class="badges">
+      <span class="badge">DPIIT Recognised Startup</span>
+      <span class="badge">India · United States · Worldwide</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">One TeamBeam · Two Homes</div>
+    <h1>You found us. Step into the <em>home</em> built for how your team works.</h1>
+    <p class="sub">TeamBeam designs, delivers, and measures corporate team experiences. We're <b>one company with two homes</b> — India and the United States — and either home serves teams anywhere in the world, including each other's markets. Pick the door that feels native to you; crossing over takes one click.</p>
+  </section>
+
+  <div class="section-tag">Choose your home</div>
+  <main class="doors">
+    <a class="door in" href="https://teambeam.in" id="door-in" aria-label="Continue to TeamBeam India">
+      <span class="home-tag">You're here</span>
+      <span class="hint-tag">Looks like you</span>
+      <div class="door-head">
+        <div class="flag"><i></i> India</div>
+        <div class="domain">teambeam.in</div>
+      </div>
+      <div>
+        <div class="door-name">For India</div>
+        <div class="door-lead">Festive, hospitality-grade offsites and MICE-scale experiences — one partner, end to end.</div>
+      </div>
+      <ul class="door-list">
+        <li>Annual offsites, leadership retreats, celebrations &amp; key dates</li>
+        <li>Single-vendor delivery: venue, travel, food, facilitation, follow-up</li>
+        <li>Designed around your team's calendar and culture</li>
+      </ul>
+      <span class="go">Enter the India home
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M1 6h17M13 1l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="door us" href="https://teambeam.us" id="door-us" aria-label="Continue to TeamBeam US">
+      <span class="hint-tag">Looks like you</span>
+      <div class="door-head">
+        <div class="flag"><i></i> United States</div>
+        <div class="domain">teambeam.us</div>
+      </div>
+      <div>
+        <div class="door-name">For the US</div>
+        <div class="door-lead">Reconnecting distributed teams — in-office, away, or online — with outcomes you can measure.</div>
+      </div>
+      <ul class="door-list">
+        <li>Distributed-team connection, on-sites &amp; quarterly moments</li>
+        <li>Online, hybrid, and in-person formats that actually fit</li>
+        <li>Clear ROI framing and measured change, not just a fun day</li>
+      </ul>
+      <span class="go">Enter the US home
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M1 6h17M13 1l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </main>
+
+  <div class="reassure">
+    <p><b>Visiting from the US?</b> You're in the right company — this is just our India address. Your home, your team, your contacts live one click away.</p>
+    <a href="https://teambeam.us">Take me to teambeam.us
+      <svg width="18" height="11" viewBox="0 0 20 12" fill="none"><path d="M1 6h17M13 1l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <section class="method">
+    <h2>The same method, both homes</h2>
+    <p class="lead">Most team outings are planned backwards — pick a venue, hope for a result. TeamBeam runs the other way: we understand the team first, design the experience around what they actually need, and then prove what changed. One method, one standard, wherever the work happens.</p>
+    <div class="flow">
+      <div class="step"><div class="n">01</div><div class="t">Scan</div><div class="d">Understand the team before anything is designed.</div></div>
+      <div class="step"><div class="n">02</div><div class="t">Design</div><div class="d">Build the experience around the outcome, not the location.</div></div>
+      <div class="step"><div class="n">03</div><div class="t">Build</div><div class="d">Every detail — venue, travel, food, flow — handled.</div></div>
+      <div class="step"><div class="n">04</div><div class="t">Deliver</div><div class="d">A trained facilitator turns play into insight.</div></div>
+      <div class="step"><div class="n">05</div><div class="t">Measure</div><div class="d">We show what changed, and keep watching.</div></div>
+    </div>
+    <div class="measure"><span class="pip">Day 14 · 30 · 60</span> <b>We measure change after the event</b>, not just satisfaction on the day.</div>
+  </section>
+
+  <section class="why">
+    <h2>Why teams choose TeamBeam</h2>
+    <div class="why-grid">
+      <div class="why-card"><h3>Diagnostic-first</h3><p>We design around what the data tells us about your team — so the day does real work, not just fills a calendar slot.</p></div>
+      <div class="why-card"><h3>One accountable partner</h3><p>Venue, travel, food, activity, facilitation, follow-up and measurement under one roof. Your organiser participates instead of firefighting.</p></div>
+      <div class="why-card"><h3>The facilitator is the product</h3><p>The person in the room is trained to read the group and convert energy into insight through a structured debrief.</p></div>
+      <div class="why-card"><h3>Proof, not promises</h3><p>Every engagement ends with measurement. We'd rather show a modest, true result than claim an unprovable transformation.</p></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Talk to us</h2>
+    <p class="lead">Tell us about your team and what you're trying to move. We'll come back with a clear yes, no, or not-yet — and a reason either way. Reach the home closest to you; we route the rest internally.</p>
+    <div class="ccols">
+      <div class="ccol in">
+        <div class="h"><i></i> India home</div>
+        <a href="mailto:start@teambeam.in">start@teambeam.in</a>
+        <span class="sm">teambeam.in — for India and the world</span>
+      </div>
+      <div class="ccol us">
+        <div class="h"><i></i> US home</div>
+        <a href="mailto:start@teambeam.us">start@teambeam.us</a>
+        <a href="tel:+14154049200">+1 (415) 404-9200</a>
+        <span class="sm">600 California St, 11th Floor, San Francisco, CA 94108</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="promise">Designed. <span>Delivered.</span> Measured.</div>
+    <div class="foot-links">
+      <a href="https://teambeam.in">teambeam.in</a>
+      <a href="https://teambeam.us">teambeam.us</a>
+    </div>
+    <div class="brandline">People · Teams · Organisations · Beyond.</div>
+  </footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"TeamBeam",
+  "url":"https://teambeam.in",
+  "description":"TeamBeam designs, delivers, and measures corporate team experiences across India and the United States, serving teams worldwide.",
+  "sameAs":["https://teambeam.in","https://teambeam.us"],
+  "slogan":"Designed. Delivered. Measured.",
+  "location":[
+    {"@type":"Place","name":"TeamBeam India","address":{"@type":"PostalAddress","addressCountry":"IN"}},
+    {"@type":"Place","name":"TeamBeam US","address":{"@type":"PostalAddress","streetAddress":"600 California St, 11th Floor","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94108","addressCountry":"US"}}
+  ],
+  "contactPoint":[
+    {"@type":"ContactPoint","email":"start@teambeam.in","areaServed":"IN","contactType":"sales"},
+    {"@type":"ContactPoint","email":"start@teambeam.us","telephone":"+1-415-404-9200","areaServed":"US","contactType":"sales"}
+  ]
+}
+</script>
+
+<script>
+  (function(){
+    try{
+      var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||"").toLowerCase();
+      if(tz.indexOf("kolkata")>-1||tz.indexOf("calcutta")>-1){document.getElementById("door-in").classList.add("suggested");}
+      else if(tz.indexOf("america/")===0){document.getElementById("door-us").classList.add("suggested");}
+    }catch(e){}
+  })();
+</script>
+<div class="tb-beam-fill"></div><div class="tb-beam-dot"></div></div>
+
+
+</body>
+</html>
