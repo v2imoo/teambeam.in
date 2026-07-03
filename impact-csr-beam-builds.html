@@ -285,6 +285,15 @@ em{color:var(--indigo)!important;font-style:normal}
 header.site{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--line)!important}
 footer.site{background:#14122B!important}
 </style>
+<style id="tb-navscroll">
+@media(max-width:1000px){
+ .nav-links{max-height:calc(100dvh - 64px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:40px!important}
+ .nav-links.open{display:flex}
+}
+@supports not (height:100dvh){
+ @media(max-width:1000px){.nav-links{max-height:calc(100vh - 64px)}}
+}
+</style>
 </head>
 <body data-group="premium">
 
