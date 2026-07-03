@@ -7,11 +7,11 @@
 <meta name="description" content="Leaders, new joiners, the whole company, or a cross-team mix - tell us who the occasion is for, and we'll match the right format, tone and scale.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0D2137;--blue:#1565C0;--amber:#E8940F;--ink:#0D2137;--mid:#3c4a5c;--muted:#6b7888;--faint:#9aa6b4;
 --line:#e6eaf0;--line2:#d3dae3;--bg:#fff;--bg2:#f6f8fb;--bg3:#eef2f7;--navyl:#eaf0f7;--bluel:#e8f1fc;--amberl:#fdf3e3;
---serif:'Bricolage Grotesque',sans-serif;--sans:'Plus Jakarta Sans',sans-serif;--mono:'Space Mono',monospace;--wrap:1140px}
+--serif:'Sora',sans-serif;--sans:'Inter',sans-serif;--mono:'Space Mono',monospace;--wrap:1140px}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);color:var(--mid);background:var(--bg);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
@@ -240,39 +240,50 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94)!im
 header.site::after{display:none!important}
 .tb-navitem>a .cev{opacity:.45;font-size:.5rem}
 </style>
-<style id="tb-warm">
-:root{--coral:#FF6B4A;--teal:#0FB5A6;--purple:#7C5CFC;--peach:#FFF3E8;--sky:#EAF2FF;--mint:#E9F8F0;--lav:#F2EEFF}
-body{background:#FFF9F1!important;color:#2f3c4a}
-/* soft rotating pastel sections — playful, not white */
-section:nth-of-type(4n+1){background:transparent}
-section:nth-of-type(4n+2){background:var(--peach)}
-section:nth-of-type(4n+3){background:var(--sky)}
-section:nth-of-type(4n){background:var(--mint)}
-.tint{background:var(--lav)!important}
-.dark{background:var(--navy)!important}
-/* gradient hero */
-.hero{background:linear-gradient(135deg,#FFF0DE 0%,#FDE6F0 46%,#E7EFFF 100%)!important}
-/* colourful kickers per section */
-section:nth-of-type(4n+1) .kicker{color:var(--amber)}
-section:nth-of-type(4n+2) .kicker{color:var(--coral)}
-section:nth-of-type(4n+3) .kicker{color:var(--blue)}
-section:nth-of-type(4n) .kicker{color:var(--teal)}
-.kicker.b{color:var(--blue)!important}
-/* cards pop on the pastels + colourful hover */
-.card{background:#fff!important;border-color:#F1E7D9!important;transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .28s}
-.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(255,107,74,.18)!important;border-color:var(--coral)!important}
-.card .more{color:var(--coral)!important;font-weight:600}
-/* vibrant numbers */
-.stat .num{color:var(--coral)!important;font-size:clamp(34px,4vw,44px)}
-.stat .lbl{color:#5b6b7d}
-.step .n{color:var(--amber)!important}
-.step h4{color:var(--navy)!important}
-.statband,.stepper{background:#fff!important;border-color:#F1E7D9!important}
-/* ghost button hover pops coral */
-.btn-o:hover{border-color:var(--coral)!important;color:var(--coral)!important}
-/* heading energy */
-.hero h1{font-size:clamp(34px,5.2vw,58px);letter-spacing:-.03em}
-em{color:var(--coral)!important}
+
+<style id="tb-trm">
+:root{--indigo:#5B4BE1;--indigo-2:#4A3AD0;--indigo-soft:#EEEBFC;--ink:#14122B;--mid:#3d3a55;--muted:#6b6885;--faint:#9a97ad;--bg:#fff;--bg2:#F4F3FB;--line:#E7E5F2;--line2:#DAD7EC;--navy:#14122B}
+body{background:#fff!important;color:var(--mid)}
+h1,h2,h3,h4,h5{color:var(--ink)}
+.lead,.big-p{color:#4a4763}
+/* NAV — smaller, tighter, cleaner */
+.nav-links{gap:22px!important}
+.nav-links a:not(.btn){font-size:14.5px!important;font-weight:600!important;color:#26233c!important;letter-spacing:.005em}
+.nav-links a:not(.btn):hover{color:var(--indigo)!important}
+.tb-navitem>a .cev{opacity:.5;font-size:.5rem}
+/* sections: cool-tint + deep indigo dark bands (not flat white) */
+.tint{background:var(--bg2)!important}
+.dark{background:#14122B!important;color:#c9c6e4}
+.dark h1,.dark h2,.dark h3{color:#fff}
+.hero{background:linear-gradient(180deg,#F5F4FD 0%,#fff 100%)!important}
+/* accents = indigo */
+.kicker{color:var(--indigo)!important;font-weight:700}
+.kicker.b{color:var(--indigo)!important}
+a{color:var(--indigo)}
+em{color:var(--indigo)!important;font-style:normal}
+/* buttons — indigo pill primary */
+.btn{border-radius:999px;transition:transform .22s,box-shadow .22s,background .2s,color .2s}
+.btn-p{background:var(--indigo)!important;color:#fff!important;border:1.5px solid transparent!important;box-shadow:0 10px 24px rgba(91,75,225,.28)!important}
+.btn-p:hover{background:var(--indigo-2)!important;transform:translateY(-2px);box-shadow:0 16px 34px rgba(91,75,225,.38)!important}
+.btn-o{background:transparent!important;color:var(--ink)!important;border:1.5px solid var(--line2)!important}
+.btn-o:hover{border-color:var(--indigo)!important;color:var(--indigo)!important;transform:translateY(-2px)}
+/* cards clean, indigo hover */
+.card{background:#fff!important;border-color:var(--line)!important;transition:transform .26s cubic-bezier(.2,.7,.3,1),box-shadow .26s,border-color .26s}
+.card:hover{transform:translateY(-4px);border-color:var(--indigo)!important;box-shadow:0 18px 40px rgba(91,75,225,.15)!important}
+.card .more{color:var(--indigo)!important;font-weight:600}
+/* stat + method */
+.stat .num{color:var(--indigo)!important;font-size:clamp(34px,4vw,44px)}
+.stat .lbl{color:var(--muted)}
+.step .n{color:var(--indigo)!important}
+.step h4{color:var(--ink)!important}
+.statband,.stepper{background:#fff!important;border-color:var(--line)!important}
+/* logo keeps amber brand glyph; wordmark ink */
+.logo .wm{color:var(--ink)}
+.mkt .mkt-in{background:var(--indigo)!important;color:#fff!important}
+.mkt .mkt-us:hover{background:var(--indigo)!important;color:#fff!important}
+/* header + footer */
+header.site{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--line)!important}
+footer.site{background:#14122B!important}
 </style>
 </head>
 <body data-group="outings">
@@ -280,10 +291,10 @@ em{color:var(--coral)!important}
 <header class="site"><div class="wrap nav">
   <a class="logo" href="/"><span class="lam">&Lambda;</span><span class="wm">TEAMBEAM <b>OUTINGS</b></span></a>
   <nav class="nav-links" id="nav">
-   <a href="what-we-do">What We Do</a>
-   <a href="who-we-serve">Who We Serve</a>
+   <a href="what-we-do">Services</a>
+   <a href="who-we-serve">Clients</a>
    <a href="destinations">Destinations</a>
-   <a href="why-teambeam">Why TeamBeam</a>
+   <a href="why-teambeam">Why Us</a>
    <a href="resources">Resources</a>
    <a href="about">About</a>
    <span class="mkt"><span class="mkt-in" aria-current="page">IN</span><span class="mkt-sep">&harr;</span><a class="mkt-us" href="https://www.teambeam.us/">US</a></span>
@@ -291,7 +302,7 @@ em{color:var(--coral)!important}
   </nav>
   <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
 </div></header>
-<div class="crumb"><div class="wrap"><a href="/">Home</a> &rsaquo; <a href="what-we-do">What We Do</a> &rsaquo; <a href="beam-occasions">Beam Occasions</a> &rsaquo; <b>By Audience</b></div></div><main><section class="hero"><div class="wrap">
+<div class="crumb"><div class="wrap"><a href="/">Home</a> &rsaquo; <a href="what-we-do">Services</a> &rsaquo; <a href="beam-occasions">Beam Occasions</a> &rsaquo; <b>By Audience</b></div></div><main><section class="hero"><div class="wrap">
  <span class="kicker reveal">Beam Occasions &middot; By Audience</span>
  <h1 class="reveal" style="max-width:880px">By Audience &mdash; start with who the moment is for.</h1>
  <p class="lead reveal" style="max-width:660px;margin-top:18px">Leaders, new joiners, the whole company, or a cross-team mix &mdash; tell us who the occasion is for, and we&rsquo;ll match the right format, tone and scale.</p>
@@ -337,10 +348,10 @@ em{color:var(--coral)!important}
      <a href="beam-platform">The Beam Platform</a>
      <a href="self-serve-kits">Self-Serve &amp; Kits</a></div>
    <div class="fcol"><h5>Explore</h5>
-     <a href="who-we-serve">Who We Serve</a>
+     <a href="who-we-serve">Clients</a>
      <a href="destinations">Destinations</a>
      <a href="occasions">Occasions</a>
-     <a href="why-teambeam">Why TeamBeam</a>
+     <a href="why-teambeam">Why Us</a>
      <a href="resources">Resources</a></div>
    <div class="fcol"><h5>Company</h5>
      <a href="about">About</a>
